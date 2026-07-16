@@ -1,0 +1,39 @@
+[project]
+name = "dolphin-nisar-sample"
+version = "0.1.0"
+description = "Real-data evidence for NISAR GSLC wavelength detection in dolphin (isce-framework/dolphin#704)"
+requires-python = ">=3.10"
+
+# opera-utils is the only direct dependency: this harness deliberately reads
+# remote NISAR HDF5 through `opera_utils._remote.open_h5`, the same code path
+# dolphin itself uses (`dolphin.io._core.read_nisar_grid_metadata`), so that the
+# measurements reflect dolphin's real behaviour rather than a lookalike reader.
+# It pulls in h5py, fsspec and the GDAL bindings transitively.
+#
+# `rich` is a workaround, not a real dependency of this harness: as of
+# opera-utils 0.25.8, `opera_utils/__init__.py` -> `missing_data.py` imports
+# `rich`, but `rich` is not declared in any of opera-utils' extras, so a clean
+# `pip install opera-utils[nisar]` cannot even `import opera_utils`. Drop this
+# once opera-utils declares it.
+#
+# numpy is pinned to the 1.x series because the system GDAL bindings that
+# opera-utils imports are compiled against NumPy 1.x; under NumPy 2.x every run
+# prints an "_ARRAY_API not found" ABI warning and a traceback on import.
+dependencies = ["opera-utils[nisar]>=0.25.7", "rich", "numpy<2"]
+
+[dependency-groups]
+dev = ["ruff"]
+
+# This is a pair of scripts, not a library: `uv sync` should install the
+# dependencies into .venv without trying to build anything here.
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "D"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"

@@ -1,0 +1,6 @@
+# uv.lock is intentionally NOT ignored: it pins the exact opera-utils/h5py build
+# used to produce reports/, which is the point of this repo.
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/

@@ -1,0 +1,74 @@
+{
+  "_comment": [
+    "Single source of truth for the granules probed by probe_center_frequency.py.",
+    "Both the probe and the generated report read this file, so the granule IDs",
+    "cited in reports/center_frequency.md are by construction the ones measured.",
+    "",
+    "Selection rule: one granule per distinct (mode, polarization) configuration",
+    "observed in the NISAR_L2_GSLC_BETA_V1 collection. The configuration is encoded",
+    "in the SDS granule name: fields 9 and 10 (1-indexed) of the underscore-split",
+    "name, e.g. NISAR_L2_PR_GSLC_002_109_D_064_[4005]_[DHDH]_A_...",
+    "",
+    "The 13 configurations below were found by scanning the first 6000 granules of",
+    "the collection via CMR (see `make survey`). They are not a random sample: the",
+    "point is to cover every configuration seen, not to estimate frequencies of",
+    "occurrence."
+  ],
+  "collection": "NISAR_L2_GSLC_BETA_V1",
+  "collection_concept_id": "C2850259510-ASF",
+  "base_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GSLC_BETA_V1",
+  "granules": [
+    {
+      "config": "0005_NADV",
+      "id": "NISAR_L2_PR_GSLC_003_063_A_013_0005_NADV_A_20251021T132204_20251021T132215_X05010_N_P_J_001"
+    },
+    {
+      "config": "0005_NASV",
+      "id": "NISAR_L2_PR_GSLC_003_010_A_038_0005_NASV_A_20251017T212236_20251017T212243_X05010_N_P_J_001"
+    },
+    {
+      "config": "0005_NAXX",
+      "id": "NISAR_L2_PR_GSLC_005_083_A_040_0005_NAXX_A_20251115T225513_20251115T225528_X05009_N_P_J_001"
+    },
+    {
+      "config": "0505_SVSH",
+      "id": "NISAR_L2_PR_GSLC_003_005_A_037_0505_SVSH_A_20251017T130232_20251017T130243_X05010_N_P_J_001"
+    },
+    {
+      "config": "2005_DHDH",
+      "id": "NISAR_L2_PR_GSLC_003_007_D_067_2005_DHDH_A_20251017T163924_20251017T163935_X05010_N_P_J_001"
+    },
+    {
+      "config": "2005_DVDV",
+      "id": "NISAR_L2_PR_GSLC_005_142_A_009_2005_DVDV_A_20251120T005021_20251120T005054_X05009_N_F_J_001"
+    },
+    {
+      "config": "2005_QPDH",
+      "id": "NISAR_L2_PR_GSLC_003_034_A_035_2005_QPDH_A_20251019T131800_20251019T131810_X05010_N_P_J_001"
+    },
+    {
+      "config": "2005_SHSH",
+      "id": "NISAR_L2_PR_GSLC_003_136_D_079_2005_SHSH_A_20251026T153050_20251026T153124_X05009_N_F_J_001"
+    },
+    {
+      "config": "2005_XXXX",
+      "id": "NISAR_L2_PR_GSLC_003_147_A_169_2005_XXXX_A_20251027T104048_20251027T104115_X05009_N_F_J_001"
+    },
+    {
+      "config": "4005_DHDH",
+      "id": "NISAR_L2_PR_GSLC_002_109_D_063_4005_DHDH_A_20251012T182508_20251012T182531_X05010_N_P_J_001"
+    },
+    {
+      "config": "4005_SHSH",
+      "id": "NISAR_L2_PR_GSLC_003_005_A_139_4005_SHSH_A_20251017T140000_20251017T140013_X05010_N_P_J_001"
+    },
+    {
+      "config": "4005_XXXX",
+      "id": "NISAR_L2_PR_GSLC_003_055_D_069_4005_XXXX_A_20251021T003500_20251021T003510_X05009_N_P_J_001"
+    },
+    {
+      "config": "7700_SHNA",
+      "id": "NISAR_L2_PR_GSLC_003_064_D_123_7700_SHNA_A_20251021T160426_20251021T160438_X05009_N_P_J_001"
+    }
+  ]
+}
