@@ -1,0 +1,441 @@
+{
+  "versions": {
+    "python": "3.12.3",
+    "opera_utils": "0.25.8",
+    "h5py": "3.16.0"
+  },
+  "results": [
+    {
+      "config": "0005_NADV",
+      "granule_id": "NISAR_L2_PR_GSLC_003_063_A_013_0005_NADV_A_20251021T132204_20251021T132215_X05010_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": false,
+          "center_frequency_hz": null,
+          "wavelength_m": null,
+          "polarizations": []
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1221500000.0,
+          "wavelength_m": 0.24542976504297995,
+          "polarizations": [
+            "VH",
+            "VV"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "0005_NASV",
+      "granule_id": "NISAR_L2_PR_GSLC_003_010_A_038_0005_NASV_A_20251017T212236_20251017T212243_X05010_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": false,
+          "center_frequency_hz": null,
+          "wavelength_m": null,
+          "polarizations": []
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1221500000.0,
+          "wavelength_m": 0.24542976504297995,
+          "polarizations": [
+            "VV"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "0005_NAXX",
+      "granule_id": "NISAR_L2_PR_GSLC_005_083_A_040_0005_NAXX_A_20251115T225513_20251115T225528_X05009_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": false,
+          "center_frequency_hz": null,
+          "wavelength_m": null,
+          "polarizations": []
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1221500000.0,
+          "wavelength_m": 0.24542976504297995,
+          "polarizations": [
+            "HV"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "0505_SVSH",
+      "granule_id": "NISAR_L2_PR_GSLC_003_005_A_037_0505_SVSH_A_20251017T130232_20251017T130243_X05010_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A,B",
+        "isMixedMode": "True",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1221500000.0,
+          "wavelength_m": 0.24542976504297995,
+          "polarizations": [
+            "VV"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1236500000.0,
+          "wavelength_m": 0.24245245289122525,
+          "polarizations": [
+            "HH"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "2005_DHDH",
+      "granule_id": "NISAR_L2_PR_GSLC_003_007_D_067_2005_DHDH_A_20251017T163924_20251017T163935_X05010_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A,B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1229000000.0,
+          "wavelength_m": 0.24393202441008952,
+          "polarizations": [
+            "HH",
+            "HV"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1293500000.0,
+          "wavelength_m": 0.23176842520293778,
+          "polarizations": [
+            "HH",
+            "HV"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "2005_DVDV",
+      "granule_id": "NISAR_L2_PR_GSLC_005_142_A_009_2005_DVDV_A_20251120T005021_20251120T005054_X05009_N_F_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A,B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1229000000.0,
+          "wavelength_m": 0.24393202441008952,
+          "polarizations": [
+            "VH",
+            "VV"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1293500000.0,
+          "wavelength_m": 0.23176842520293778,
+          "polarizations": [
+            "VH",
+            "VV"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "2005_QPDH",
+      "granule_id": "NISAR_L2_PR_GSLC_003_034_A_035_2005_QPDH_A_20251019T131800_20251019T131810_X05010_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A,B",
+        "isMixedMode": "True",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1229000000.0,
+          "wavelength_m": 0.24393202441008952,
+          "polarizations": [
+            "HH",
+            "HV",
+            "VH",
+            "VV"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1293500000.0,
+          "wavelength_m": 0.23176842520293778,
+          "polarizations": [
+            "HH",
+            "HV"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "2005_SHSH",
+      "granule_id": "NISAR_L2_PR_GSLC_003_136_D_079_2005_SHSH_A_20251026T153050_20251026T153124_X05009_N_F_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A,B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1229000000.0,
+          "wavelength_m": 0.24393202441008952,
+          "polarizations": [
+            "HH"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1293500000.0,
+          "wavelength_m": 0.23176842520293778,
+          "polarizations": [
+            "HH"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "2005_XXXX",
+      "granule_id": "NISAR_L2_PR_GSLC_003_147_A_169_2005_XXXX_A_20251027T104048_20251027T104115_X05009_N_F_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A,B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1229000000.0,
+          "wavelength_m": 0.24393202441008952,
+          "polarizations": [
+            "HV"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1293500000.0,
+          "wavelength_m": 0.23176842520293778,
+          "polarizations": [
+            "HV"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "4005_DHDH",
+      "granule_id": "NISAR_L2_PR_GSLC_002_109_D_063_4005_DHDH_A_20251012T182508_20251012T182531_X05010_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A,B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1239000000.0,
+          "wavelength_m": 0.2419632429378531,
+          "polarizations": [
+            "HH",
+            "HV"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1293500000.0,
+          "wavelength_m": 0.23176842520293778,
+          "polarizations": [
+            "HH",
+            "HV"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "4005_SHSH",
+      "granule_id": "NISAR_L2_PR_GSLC_003_005_A_139_4005_SHSH_A_20251017T140000_20251017T140013_X05010_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A,B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1239000000.0,
+          "wavelength_m": 0.2419632429378531,
+          "polarizations": [
+            "HH"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1293500000.0,
+          "wavelength_m": 0.23176842520293778,
+          "polarizations": [
+            "HH"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "4005_XXXX",
+      "granule_id": "NISAR_L2_PR_GSLC_003_055_D_069_4005_XXXX_A_20251021T003500_20251021T003510_X05009_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A,B",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1239000000.0,
+          "wavelength_m": 0.2419632429378531,
+          "polarizations": [
+            "HV"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": true,
+          "center_frequency_hz": 1293500000.0,
+          "wavelength_m": 0.23176842520293778,
+          "polarizations": [
+            "HV"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "config": "7700_SHNA",
+      "granule_id": "NISAR_L2_PR_GSLC_003_064_D_123_7700_SHNA_A_20251021T160426_20251021T160438_X05009_N_P_J_001",
+      "identification": {
+        "missionId": "NISAR",
+        "radarBand": "L",
+        "listOfFrequencies": "A",
+        "isMixedMode": "False",
+        "productSpecificationVersion": "1.4.0",
+        "productVersion": "1.0.2"
+      },
+      "frequencies": [
+        {
+          "name": "frequencyA",
+          "present": true,
+          "center_frequency_hz": 1257500000.0,
+          "wavelength_m": 0.23840354512922465,
+          "polarizations": [
+            "HH"
+          ]
+        },
+        {
+          "name": "frequencyB",
+          "present": false,
+          "center_frequency_hz": null,
+          "wavelength_m": null,
+          "polarizations": []
+        }
+      ],
+      "error": null
+    }
+  ]
+}
