@@ -53,6 +53,34 @@ worth anything:
 read the same file, so the granule IDs cited in the report are by construction
 the ones that were measured.
 
+## Validating the proposed wavelength reader
+
+The measurements above motivated adding a wavelength reader to
+[opera-utils][opera-utils] (`get_nisar_wavelength` +
+`GslcProduct.get_wavelength`). `probe_wavelength.py` validates that
+implementation against the same granules: for every sub-band present it
+requires `get_nisar_wavelength(url, subdataset)` to equal the independently
+read `c / centerFrequency` exactly, and for every sub-band absent it requires
+a contextual `ValueError` instead of a silent fallback. The result is in
+[`reports/wavelength_validation.md`](reports/wavelength_validation.md).
+
+```bash
+make validate-wavelength   # installs the pinned opera-utils revision, then probes
+```
+
+The revision under review is pinned in the Makefile (`OPERA_UTILS_COMMIT` /
+`OPERA_UTILS_SPEC`). To validate a local work-in-progress clone instead:
+
+```bash
+make validate-wavelength OPERA_UTILS_SPEC=/path/to/opera-utils
+```
+
+The report records the commit actually installed (from PEP 610
+`direct_url.json`, or `git rev-parse` for local installs) and warns if it
+differs from the pin.
+
+[opera-utils]: https://github.com/opera-adt/opera-utils
+
 ## Reproducing
 
 You need [Earthdata Login][edl] credentials in `~/.netrc`:
@@ -110,8 +138,13 @@ rather than in this harness:
 - `granules.json` — granules to probe, with the selection rule. Single source of
   truth for both the probe and the report.
 - `probe_center_frequency.py` — the measurement; writes `reports/`.
+- `probe_wavelength.py` — validation of the proposed opera-utils wavelength
+  reader against the same granules (`make validate-wavelength`).
 - `survey_configurations.py` — how `granules.json` was derived from CMR
   (`make survey`). Metadata search only; no credentials needed.
 - `reports/center_frequency.md` — the generated report cited from the issue.
 - `reports/center_frequency.json` — the same results, raw.
+- `reports/wavelength_validation.md` — the generated validation report for the
+  opera-utils wavelength reader.
+- `reports/wavelength_validation.json` — the same results, raw.
 - `pyproject.toml` / `uv.lock` — pinned environment used to produce `reports/`.

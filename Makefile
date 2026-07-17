@@ -39,6 +39,28 @@ validate:  ## Probe every granule in granules.json, regenerate reports/
 render:  ## Rebuild the markdown report from the saved JSON (no network, no auth)
 	$(PYTHON) probe_center_frequency.py --render-only
 
+# The opera-utils revision under review (the wavelength reader proposed for
+# isce-framework/dolphin#704). OPERA_UTILS_SPEC is anything `uv pip install`
+# accepts; override it with a local clone to validate work in progress:
+#   make validate-wavelength OPERA_UTILS_SPEC=../opera-utils
+OPERA_UTILS_COMMIT ?= 720bca9cb425049424015a430da5cc0466394eea
+OPERA_UTILS_SPEC ?= git+https://github.com/s-sasaki-earthsea-wizard/opera-utils@$(OPERA_UTILS_COMMIT)
+
+# rioxarray, scipy, geopandas, pyogrio: `opera_utils.nisar` imports all of
+# these at package-import time, but (as of 720bca9) the `nisar` extra declares
+# none of them -- the same class of issue as the `rich` workaround in
+# pyproject.toml. numpy stays <2 because the system GDAL bindings linked by
+# `make link-gdal` are compiled against NumPy 1.x.
+setup-wavelength:  ## Install the opera-utils revision under review into .venv
+	uv pip install -p .venv "$(OPERA_UTILS_SPEC)" \
+		rioxarray scipy geopandas pyogrio "numpy<2"
+
+validate-wavelength: setup-wavelength  ## Validate get_nisar_wavelength on real GSLCs, regenerate reports/
+	$(PYTHON) probe_wavelength.py --expected-commit $(OPERA_UTILS_COMMIT)
+
+render-wavelength:  ## Rebuild the wavelength report from the saved JSON (no network, no auth)
+	$(PYTHON) probe_wavelength.py --render-only
+
 survey:  ## Re-derive the (mode, polarization) configurations from CMR
 	$(PYTHON) survey_configurations.py
 
