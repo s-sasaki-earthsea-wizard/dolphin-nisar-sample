@@ -5,7 +5,7 @@
     "h5py": "3.16.0"
   },
   "opera_utils_commit": "720bca9cb425049424015a430da5cc0466394eea",
-  "opera_utils_commit_provenance": "git rev-parse of the local install source",
+  "opera_utils_commit_provenance": "PEP 610 direct_url.json (VCS install)",
   "results": [
     {
       "config": "0005_NADV",

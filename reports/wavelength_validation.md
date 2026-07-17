@@ -63,7 +63,7 @@ Reproduce with `make validate-wavelength` (see README.md).
 
 ## Environment
 
-- opera-utils commit: `720bca9cb425049424015a430da5cc0466394eea` (git rev-parse of the local install source)
+- opera-utils commit: `720bca9cb425049424015a430da5cc0466394eea` -- PEP 610 direct_url.json (VCS install)
 - python: `3.12.3`
 - opera_utils: `0.25.8.post1.dev2+g720bca9cb`
 - h5py: `3.16.0`

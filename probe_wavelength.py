@@ -346,7 +346,7 @@ def render_markdown(
     a("")
     a("## Environment")
     a("")
-    a(f"- opera-utils commit: `{commit}` ({commit_provenance})")
+    a(f"- opera-utils commit: `{commit}` -- {commit_provenance}")
     if commit_expected and commit != commit_expected:
         a(
             f"  - **WARNING**: differs from the Makefile pin `{commit_expected}`"
